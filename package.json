@@ -1,0 +1,26 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "Refactoring y API REST de proyecto legado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elchicogamer117/fizzBuzz.git"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "Refactoring",
+    "Git",
+    "GitHub"
+  ],
+  "author": "elchicogamer117",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elchicogamer117/fizzBuzz/issues"
+  },
+  "homepage": "https://github.com/Elchicogamer117/fizzBuzz#readme"
+}
