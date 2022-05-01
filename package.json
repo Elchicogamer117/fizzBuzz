@@ -4,7 +4,8 @@
   "description": "Refactoring y API REST de proyecto legado",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/jest/bin/jest.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Elchicogamer117/fizzBuzz/issues"
   },
-  "homepage": "https://github.com/Elchicogamer117/fizzBuzz#readme"
+  "homepage": "https://github.com/Elchicogamer117/fizzBuzz#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
 }
