@@ -1,9 +1,11 @@
-import fs from "fs";
+const fs = require("fs");
 
-export default class reader{
+class reader{
       
       static readJsonFile(patch){
             const rawdata = fs.readFileSync(patch)
             return JSON.parse(rawdata)
       }
 }
+
+module.exports = reader
