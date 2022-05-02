@@ -1,3 +1,4 @@
+
 class fizzBuzzService{
       static applyValidationInExplorer(explorer){
             if(explorer.score % 3 === 0){ 
@@ -9,8 +10,7 @@ class fizzBuzzService{
             } else if(explorer.score % 5 === 0 && explorer.score % 3 === 0){
                   explorer.trick = "FIZZBUZZ";
                   return explorer;
-            }
-            else{
+            } else{
                   explorer.trick = explorer.score;
                   return explorer;
             }

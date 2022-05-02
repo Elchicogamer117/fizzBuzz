@@ -22,11 +22,11 @@ describe("Test unit on app.js ", () => {
             
             const assignFizzTrick = function(explorer){
                   if(explorer.score % 3 === 0){ 
-                      explorer.trick = "FIZZ";
-                      return explorer;
+                        explorer.trick = "FIZZ";
+                        return explorer;
                   }else{
-                      explorer.trick = explorer.score;
-                      return explorer;
+                        explorer.trick = explorer.score;
+                        return explorer;
                   }
             };
             
@@ -43,11 +43,11 @@ describe("Test unit on app.js ", () => {
             
             const assignBuzzTrick = function(explorer){
                   if(explorer.score%5 === 0){
-                      explorer.trick = "BUZZ";
-                      return explorer;
+                        explorer.trick = "BUZZ";
+                        return explorer;
                   }else{
-                      explorer.trick = explorer.score;
-                      return explorer;
+                        explorer.trick = explorer.score;
+                        return explorer;
                   }
             };
             
@@ -63,19 +63,19 @@ describe("Test unit on app.js ", () => {
       test("5) Get a new list of explorers in node if the score number is divisible by 5, we need to set a new property called trick and set the value BUZZ, if not this value should be just the score", () => {
             
             const assignFizzBuzzTrick = function(explorer){
-                  if(explorer.score%5 === 0 && explorer.score%3 === 0){
-                      explorer.trick = "FIZZBUZZ";
-                      return explorer;
+                  if(explorer.score % 5 === 0 && explorer.score%3 === 0){
+                        explorer.trick = "FIZZBUZZ";
+                        return explorer;
                   }else{
-                      explorer.trick = explorer.score;
-                      return explorer;
+                        explorer.trick = explorer.score;
+                        return explorer;
                   }
-              };
-              
-              const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assignFizzBuzzTrick(explorer));
+            };
+            
+            const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assignFizzBuzzTrick(explorer));
 
             for(let explorer of explorersInNodeAndFizzBuzzTrick){
-                  if(explorer.score%5 === 0 && explorer.score%3 === 0){
+                  if(explorer.score % 5 === 0 && explorer.score%3 === 0){
                         expect(explorer.trick).toBe('FIZZBUZZ')
                   }
             };
