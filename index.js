@@ -12,8 +12,8 @@ const countExpByMss = explorerService.getAmountOfExplorersByMission(explorers, "
 const userByMss = explorerService.getExplorersUsernamesByMission(explorers,"node");
 
 console.log(expByMss);
-console.log(countExpByMss);
-console.log(userByMss);
+// console.log(countExpByMss);
+// console.log(userByMss);
 
 //*Validacioens
 const explorer1 = {name: "Explorer1", score: 1};
@@ -28,7 +28,7 @@ fizzBuzzService.applyValidationInExplorer(explorer5); // {name: "Explorer5", sco
 const explorer15 = {name: "Explorer15", score: 15};
 fizzBuzzService.applyValidationInExplorer(explorer15); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
 
-console.log(explorer1);
-console.log(explorer3);
-console.log(explorer5);
-console.log(explorer15);
+// console.log(explorer1);
+// console.log(explorer3);
+// console.log(explorer5);
+// console.log(explorer15);
