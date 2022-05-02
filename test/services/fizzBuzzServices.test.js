@@ -14,7 +14,7 @@ describe("Test unit on fizzBuzzService ", () => {
                   } else if(explorer.score % 5 === 0 && explorer.score % 3 !== 0){
                         expect(explorer.trick).toBe('BUZZ')
                   } else if(explorer.score % 5 === 0 && explorer.score % 3 === 0){
-                        expect(explorer.trick).toBe('FIZZBUZ')
+                        expect(explorer.trick).toBe('FIZZBUZZ')
                   }
             };
       });
