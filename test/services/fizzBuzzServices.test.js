@@ -9,12 +9,12 @@ describe("Test unit on fizzBuzzService ", () => {
             const explorersFizzBuzz = explorers.map((explorer) => fizzBuzzService.applyValidationInExplorer(explorer))
 
             for(let explorer of explorersFizzBuzz){
-                  if(explorer.score % 3 === 0){
+                  if(explorer.score % 3 === 0 && explorer.score % 5 !== 0){
                         expect(explorer.trick).toBe('FIZZ')
-                  } else if(explorer.score % 5 === 0){
+                  } else if(explorer.score % 5 === 0 && explorer.score % 3 !== 0){
                         expect(explorer.trick).toBe('BUZZ')
                   } else if(explorer.score % 5 === 0 && explorer.score % 3 === 0){
-                        expect(explorer.trick).toBe('FIZZBUZZ')
+                        expect(explorer.trick).toBe('FIZZBUZ')
                   }
             };
       });
