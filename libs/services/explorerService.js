@@ -4,14 +4,12 @@ class explorerService{
       }
 
       static getAmountOfExplorersByMission(explorers, mission){
-            const explorersByMission = explorers.filter((explorer) => explorer.mission == mission);
-            return explorersByMission.length
+            return this.filterByMission(explorers,mission).length
       }
       static getExplorersUsernamesByMission(explorers, mission){
-            const explorersByMission = explorers.filter((explorer) => explorer.mission == mission);
-            return explorersByMission.map((explorer) => explorer.githubUsername);
+            //const explorersByMission = explorers.filter((explorer) => explorer.mission == mission);
+            return this.filterByMission(explorers, mission).map((explorer) => explorer.githubUsername);
       }
-
 }
 
 module.exports = explorerService

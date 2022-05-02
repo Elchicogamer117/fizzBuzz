@@ -11,9 +11,9 @@ const expByMss = explorerService.filterByMission(explorers, 'node')
 const countExpByMss = explorerService.getAmountOfExplorersByMission(explorers, 'node')
 const userByMss = explorerService.getExplorersUsernamesByMission(explorers,'node')
 
-// console.log(expByMss)
-// console.log(countExpByMss)
-// console.log(userByMss)
+console.log(expByMss)
+console.log(countExpByMss)
+console.log(userByMss)
 
 //*Validacioens
 const explorer1 = {name: "Explorer1", score: 1}
