@@ -5,7 +5,7 @@ const explorers = JSON.parse(rawdata);
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
 
 describe("Test unit on app.js ", () => {
-      test('1) Get the quantity of explorers names in node', () => {
+      test("1) Get the quantity of explorers names in node", () => {
 
             expect(explorersInNode.length).toBe(10);
       });
@@ -34,9 +34,9 @@ describe("Test unit on app.js ", () => {
 
             for(let explorer of explorersInNodeAndFizzTrick){
                   if(explorer.score % 3 === 0){
-                        expect(explorer.trick).toBe('FIZZ')
+                        expect(explorer.trick).toBe("FIZZ");
                   }
-            };
+            }
       });
 
       test("4) Get a new list of explorers in node if the score number is divisible by 5, we need to set a new property called trick and set the value BUZZ, if not this value should be just the score", () => {
@@ -55,9 +55,9 @@ describe("Test unit on app.js ", () => {
 
             for(let explorer of explorersInNodeAndBuzzTrick){
                   if(explorer.score % 5 === 0){
-                        expect(explorer.trick).toBe('BUZZ')
+                        expect(explorer.trick).toBe("BUZZ");
                   }
-            };
+            }
       });
 
       test("5) Get a new list of explorers in node if the score number is divisible by 5, we need to set a new property called trick and set the value BUZZ, if not this value should be just the score", () => {
@@ -76,9 +76,9 @@ describe("Test unit on app.js ", () => {
 
             for(let explorer of explorersInNodeAndFizzBuzzTrick){
                   if(explorer.score % 5 === 0 && explorer.score%3 === 0){
-                        expect(explorer.trick).toBe('FIZZBUZZ')
+                        expect(explorer.trick).toBe("FIZZBUZZ");
                   }
-            };
+            }
       });
-})
+});
 

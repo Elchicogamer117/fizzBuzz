@@ -23,12 +23,12 @@ const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer
 // Score: 5, Trick: 5.
 
 const assignFizzTrick = function(explorer){
-    if(explorer.score % 3 === 0){ //*? operador modulo '%' restante de divisiones enteras, en este caso significa: a todo multiplo de 3
-        explorer.trick = "FIZZ";
-        return explorer;
+      if(explorer.score % 3 === 0){ //*? operador modulo '%' restante de divisiones enteras, en este caso significa: a todo multiplo de 3
+            explorer.trick = "FIZZ";
+            return explorer;
     }else{
-        explorer.trick = explorer.score;
-        return explorer;
+            explorer.trick = explorer.score;
+            return explorer;
     }
 };
 //console.log(assignFizzTrick(explorers))
@@ -41,11 +41,11 @@ const explorersInNodeAndFizzTrick = explorersInNode.map((explorer) => assignFizz
 //
 const assignBuzzTrick = function(explorer){
     if(explorer.score%5 === 0){
-        explorer.trick = "BUZZ";
-        return explorer;
+            explorer.trick = "BUZZ";
+            return explorer;
     }else{
-        explorer.trick = explorer.score;
-        return explorer;
+            explorer.trick = explorer.score;
+            return explorer;
     }
 };
 
@@ -56,11 +56,11 @@ const explorersInNodeAndBuzzTrick = explorersInNode.map((explorer) => assignBuzz
 
 const assignFizzBuzzTrick = function(explorer){
     if(explorer.score%5 === 0 && explorer.score%3 === 0){
-        explorer.trick = "FIZZBUZZ";
-        return explorer;
+            explorer.trick = "FIZZBUZZ";
+            return explorer;
     }else{
-        explorer.trick = explorer.score;
-        return explorer;
+            explorer.trick = explorer.score;
+            return explorer;
     }
 };
 

@@ -4,7 +4,7 @@ class explorerService{
       }
 
       static getAmountOfExplorersByMission(explorers, mission){
-            return this.filterByMission(explorers,mission).length
+            return this.filterByMission(explorers,mission).length;
       }
       static getExplorersUsernamesByMission(explorers, mission){
             //const explorersByMission = explorers.filter((explorer) => explorer.mission == mission);
@@ -12,4 +12,4 @@ class explorerService{
       }
 }
 
-module.exports = explorerService
+module.exports = explorerService;
