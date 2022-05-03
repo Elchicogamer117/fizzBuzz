@@ -22,3 +22,22 @@ Crea un API para usar la funcionalidad anterior:
 
 ## 3 Feature
 Crea un endpoint para recibir un número y aplicar la validación del fizzbuzz.
+
+## Resultado
+A continuación se presenta un esquema de como se consivio y armo este proyecto
+![Esquema de funcionamiento](https://user-images.githubusercontent.com/89102805/166521689-d986867a-9fe5-4703-8ee5-6551393d0675.png)
+
+En esta practica se logro:
+- Realizar lectura de un código legado
+- Realizar la lectura de archivos json
+- Crear un proyectos de js
+- Aplicar técnicas de refactoring y diseño con orientación a objetos
+- Modular y separar responsabilidades
+- Versionar con git y GitHub
+- Usar NPM condiferentes dependencias
+- Aplicar TDD y pruebas de unidad
+- Usar GitHub Actions para Pruebas Automatizadas
+- Usar Linter y guias de estilo para escribir código
+- Usar GitHub para hacer forks y pull request
+- Crear una API con Express
+
