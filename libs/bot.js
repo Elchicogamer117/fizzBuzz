@@ -15,7 +15,7 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
 
 bot.on("message", (msg) => {
       const chatId = msg.chat.id;
-      const patch = msg.text;
+      const patch = msg.text.toLowerCase;
       responseBot = explorerController.getValidationBot(patch)
       bot.sendMessage(chatId, responseBot);
 });

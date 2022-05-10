@@ -23,7 +23,7 @@ class explorerController{
 		console.log(isNumber(patch))
 		console.log(typeof(patch))
 		console.log(patch)
-		if(!isNaN(patch)){ //*? isNumber(patch) == true
+		if(!isNaN(patch)){
 			const fizzbuzzTrick = fizzBuzzService.applyValidationInNumber(patch);
 			return `Tu número es: ${patch} -> Validación: ${fizzbuzzTrick} 🤖`;
 		} else if(patch == "node" || patch == "java"){

@@ -34,7 +34,6 @@
   },
   "dependencies": {
     "express": "^4.18.1",
-    "is-number": "^7.0.0",
     "node-telegram-bot-api": "^0.57.0"
   }
 }
