@@ -1,4 +1,3 @@
-//import reader from '../../libs/utils/reader'  <- jest tiene problemas para ejecutar ES6+
 const reader = require("../../libs/utils/reader");
 
 describe("Test for reader.js", () => {

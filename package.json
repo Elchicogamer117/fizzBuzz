@@ -7,7 +7,8 @@
     "test": "node ./node_modules/jest/bin/jest.js",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
-    "start": "node index.js"
+    "start": "node index.js",
+    "bot": "node ./libs/bot.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "supertest": "^6.2.3"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "node-telegram-bot-api": "^0.57.0"
   }
 }

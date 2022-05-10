@@ -1,9 +1,4 @@
-const reader = require("../../libs/utils/reader");
-// const explorerService = require('../../libs/services/explorerService');
-// const fizzBuzzService = require('../../libs/services/fizzBuzzService');
 const explorerController = require("../../libs/controllers/explorerController");
-
-const explorers = reader.readJsonFile("explorers.json");
 
 describe("Test for explorer controller", () => {
 	test("1) Get the quantity of explorers names in node", () => {
